@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Title: {{ author.title }}</h1>
+    <p><strong>First name:</strong> {{ author.first_name }}</p>
+    <p><strong>Last name:</strong> {{ author.last_name }}</p>
+    <p><strong>Date of birth:</strong> {{ author.date_of_birth }}</p>
+    <p><strong>Died:</strong> {{ author.date_of_death }}</p>
+    <!--<p><strong>Gener:</strong> {% for genre in author.genre.all %} {{ genre }} {% if not forloop.last %}, {% endif %}{% endfor %}</p>-->
+    
+
+{% endblock %}
